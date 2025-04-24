@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+ --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+ --fonte2: "Passion One", sans-serif;
+ --fonte3: "Sriracha", cursive;
+}
+
+body {
+  background-color: darkgray;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-variant: small-caps;
+  padding-top: 50px;
+  font-family: var(--fonte2);
+  font-size: 4.5vw;
+}
+
+header p {
+  padding-bottom: 50px;
+  font-family: var(--fonte3);
+
+}
+
+Header a, footer a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh; /* DESSA FORMA EU FAÇO COM QUE A ALTURA ESTEJA ATRELADA AO TAMANHO DA TELA (VIEW HEIGHT) QUE FAZ COM QUE CONFORME EU MEXA NO TAMNHO DA JANELA A CAIXA DE TEXTO VÁ SE AJUSTANDO*/
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: var(--fonte3);
+  font-size: 3.5vw;
+
+}
+
+section p {
+  padding-bottom: 10px;
+}
+
+section.imagem p {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.326);
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+
+}
+
+section.imagem {
+
+  background-color: rgba(0, 0, 0, 0.403);
+  color: white;
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+section.imagem#imagem1 {
+  background-image: url('imagens/background001.jpg');
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section.imagem#imagem2 {
+  background-image: url('imagens/background002.jpg');
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
